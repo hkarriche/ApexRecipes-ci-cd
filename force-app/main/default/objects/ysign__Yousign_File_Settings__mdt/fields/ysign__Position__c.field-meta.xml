@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__Position__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Format: &quot;llx,lly,urx,urx,ury&quot;
+Be careful, no spaces should be inserted before or after commas.
+Please use https://placeit.yousign.fr/ to get the position.</inlineHelpText>
+    <label>Position</label>
+    <length>15</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

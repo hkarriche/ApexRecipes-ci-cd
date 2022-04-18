@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Attention, si l&apos;objet est Opportunité, le champ &quot;Id de Contact&quot; ne peut être sélectionné. En effet, l&apos;accès à ce champ est restreint et réfère en réalité au Contact Primaire des &quot;Roles de Contact de l&apos;Opportunité&quot;.</help>
+    <label></label>
+    <name>ysign__Contact_Field__c</name>
+</CustomFieldTranslation>

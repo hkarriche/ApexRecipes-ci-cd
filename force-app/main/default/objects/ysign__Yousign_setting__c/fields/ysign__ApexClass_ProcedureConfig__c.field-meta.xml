@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__ApexClass_ProcedureConfig__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To override default yousign Procedure Config, please create an apex class that implements ysign.IProcedureConfig and provide your implementation of : https://swagger.yousign.com/ (ProcedureConfig)</description>
+    <externalId>false</externalId>
+    <label>ApexClass ProcedureConfig</label>
+    <length>200</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

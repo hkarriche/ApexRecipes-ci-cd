@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>ysign__Role__c</name>
+    <picklistValues>
+        <masterLabel>Signatory</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validator</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__VR02_AutoselectContactWithoutContact</fullName>
+    <active>true</active>
+    <errorConditionFormula>ysign__Autoselect_contact__c  &amp;&amp; 
+ISBLANK( ysign__Contact_Field__c ) &amp;&amp;
+ysign__Object__r.QualifiedApiName != &apos;Opportunity&apos;</errorConditionFormula>
+    <errorDisplayField>ysign__Contact_Field__c</errorDisplayField>
+    <errorMessage>Autoselect related contact is checked but no Contact field has been selected</errorMessage>
+</ValidationRule>

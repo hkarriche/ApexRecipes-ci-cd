@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__Contact_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Be careful, if your object is Opportunity, you can&apos;t select the &quot;Contact ID&quot; field because access to this special field is restricted as it refers to Primary OpportunityContactRole. If you do, the metadata record will be hidden from results.</inlineHelpText>
+    <label>Contact Field</label>
+    <metadataRelationshipControllingField>ysign__Yousign_Object_Settings__mdt.ysign__Object__c</metadataRelationshipControllingField>
+    <referenceTo>FieldDefinition</referenceTo>
+    <relationshipLabel>Yousign_Objects_Settings</relationshipLabel>
+    <relationshipName>Yousign_Objects_Settings</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

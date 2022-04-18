@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__Link_to_Sign__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(ysign__Yousign_Signatory_Id__c), 
+    null,
+    HYPERLINK( 
+        IF($Setup.ysign__Yousign_setting__c.ysign__Environment__c=&apos;PRODUCTION&apos;, 
+            &apos;https://webapp.yousign.com&apos;, 
+            &apos;https://staging-app.yousign.com&apos;
+        ) + 
+        &quot;/procedure/sign?members=&quot; + ysign__Yousign_Signatory_Id__c,
+        $Label.ysign__yousign_lc_title, 
+        &apos;YouSign&apos;) 
+)</formula>
+    <label>Link to Sign</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

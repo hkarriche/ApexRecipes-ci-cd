@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__VR01_FIleRuleEnabledWithoutMinFiles</fullName>
+    <active>true</active>
+    <errorConditionFormula>ysign__Has_files_rules__c &amp;&amp; 
+	(
+					ISBLANK( ysign__Min_required_files__c ) ||
+					ysign__Min_required_files__c &lt;= 0
+	)</errorConditionFormula>
+    <errorDisplayField>ysign__Min_required_files__c</errorDisplayField>
+    <errorMessage>Files rules are enabled but there are no value set for min required files field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__VR03_RelatedContactFieldIsNotContact</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK( ysign__Contact_Field__c )) &amp;&amp;
+AND(
+    NOT(CONTAINS(ysign__Contact_Field__r.DataType, &apos;Lookup&apos;)),
+    NOT(CONTAINS(ysign__Contact_Field__r.DataType, &apos;Référence&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>ysign__Contact_Field__c</errorDisplayField>
+    <errorMessage>Selected Contact field is not a lookup to Contact object.</errorMessage>
+</ValidationRule>

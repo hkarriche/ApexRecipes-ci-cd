@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ysign__VR04_CannotClosePopupIfYsignIntegration</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ysign__Use_Yousign_Integration__c,
+    OR (ysign__Close_popup_on_submit__c,
+        ysign__Close_popup_on_result__c
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot close the popup automatically when Use yousign integration is checked.</errorMessage>
+</ValidationRule>
